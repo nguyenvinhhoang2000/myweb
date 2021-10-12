@@ -1,0 +1,105 @@
+@import "../../scss/varible";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  width: 240px;
+
+  background-color: $bg-color-dark;
+
+  position: fixed;
+  top: 0;
+
+  font-weight: 700;
+
+  &_logo {
+    display: flex;
+    align-items: center;
+
+    height: 120px;
+
+    & img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    & p {
+      font-weight: 700;
+      font-size: larger;
+
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(45deg, #a163f5 10%, #efbad3);
+    }
+  }
+
+  &_main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &--link {
+      width: 180px;
+      padding: 8px 0 8px 20px;
+      margin-bottom: 4px;
+
+      font-size: $font-size-sm;
+      text-decoration: none;
+      color: $text-color-white;
+      border-radius: 4px;
+
+      transition: all 0.2s ease;
+
+      & i {
+        text-align: center;
+        margin-right: 10px;
+        width: 20px;
+        font-size: 16px;
+      }
+    }
+
+    &--link:hover {
+      background-color: $bg-color-button;
+    }
+
+    & .active {
+      background-color: $bg-color-button;
+    }
+  }
+
+  &_sub {
+    display: flex;
+    flex-direction: column;
+
+    &--link {
+      width: 180px;
+      padding: 8px 0 8px 20px;
+      margin-bottom: 4px;
+
+      font-size: $font-size-sm;
+      text-decoration: none;
+      color: $text-color-white;
+      border-radius: $boder-radius-8;
+      transition: all 0.2s ease;
+
+      & i {
+        text-align: center;
+        margin-right: 10px;
+        width: 20px;
+        font-size: 16px;
+      }
+    }
+
+    &--link:hover {
+      background-color: $bg-color-button;
+    }
+
+    & .active {
+      background-color: $bg-color-button;
+    }
+  }
+}

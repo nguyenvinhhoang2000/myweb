@@ -1,0 +1,59 @@
+@import "../../scss/varible";
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5999b;
+
+  height: 150px;
+  width: 48%;
+  min-width: 400px;
+
+  border-radius: $boder-radius-8;
+
+  overflow: hidden;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: $text-color-dark;
+    padding: 20px;
+
+    & i {
+      font-size: 38px;
+    }
+
+    &--title {
+      font-size: 22px;
+      font-weight: 700;
+
+      padding-top: 15px;
+    }
+
+    &--description {
+      font-weight: 500;
+    }
+  }
+
+  &_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $text-color-white;
+    background-color: $bg-color-button;
+
+    padding: 0 36px;
+
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+
+    & i {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+}
